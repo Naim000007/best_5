@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 palyer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@200;300;400;500&family=Poppins:ital,wght@0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+     <header class="a">
+        <div class="text-white"> 
+            <h1 class="text-5xl text-center text-bold heading p-6 text-orange-600">Best Five Player</h1>
+            <p class="text-center pb-6">Considered as some of the best players in their respective sports, Lionel Messi, Cristiano Ronaldo,<br>LeBron James, Serena Williams, and Novak Djokovic have achieved remarkable success. <br> Messi and Ronaldo dominate the world of football with their extraordinary skills. <br> LeBron James is an iconic figure in basketball, <br> while Serena Williams and Novak Djokovic have consistently excelled in tennis.</p>
+        </div>
+        <img class="banner_image" src="photo/11.webp" alt="" srcset="">
+     </header>
+
+     <section class="bg-gray-300 ">
+        <div class="p-8 grid grid-cols-4 gap-4">
+        <div class="relative flex w-96 flex-col rounded-xl bg-black text-white bg-clip-border text-gray-700 shadow-md p-8 ">
+            <div class="relative mx-4 -mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 p-8">
+              <img
+                src="photo/1.jpg"
+              />
+            
+            </div>
+            <div class="p-6">
+              <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased" id="player-name1">
+                Ronaldo
+              </h5>
+              <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+               36 goals 120 assist
+              </p>
+            </div>
+            <div class="p-6 pt-0">
+              <button
+                class="select-none rounded-lg bg-pink-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button" id="btn-1"
+                data-ripple-light="true"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <div class="relative flex w-96 flex-col rounded-xl bg-black text-white bg-clip-border text-gray-700 shadow-md p-8 ">
+            <div class="relative mx-4 -mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 p-8">
+              <img
+                src="photo/2.jpg"
+              />
+            </div>
+            <div class="p-6">
+              <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased" id="player-name2">
+                Messi
+              </h5>
+              <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                10 goals 39 assist
+              </p>
+            </div>
+            <div class="p-6 pt-0">
+              <button
+                class="select-none rounded-lg bg-pink-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" 
+                type="button" id="btn-2"
+                data-ripple-light="true"
+              >
+                Select 
+              </button>
+            </div>
+          </div>
+          <div class="relative flex w-96 flex-col rounded-xl bg-black text-white bg-clip-border text-gray-700 shadow-md p-8 ">
+            <div class="relative mx-4 -mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 p-8">
+              <img
+                src="photo/3.jpg"
+              />
+            </div>
+            <div class="p-6">
+              <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased " id="player-name3">
+                runi
+              </h5>
+              <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+               15 goals 15 assist
+              </p>
+            </div>
+            <div class="p-6 pt-0">
+              <button
+                class="select-none rounded-lg bg-pink-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button" id="btn-3"
+                data-ripple-light="true"
+              >
+                Select 
+              </button>
+            </div>
+          </div>
+          <div class="relative flex w-96 flex-col rounded-xl bg-black text-white bg-clip-border text-gray-700 shadow-md p-8 ">
+            
+            <div class="mx-auto">
+                <p class="text-3xl">Selected - V</p>
+                 <ol class="mt-4" id="item-list">
+                    <li><span id="show-player-name1"></span></li>
+                    <li><span id="show-player-name2"></span></li>
+                    <li><span id="show-player-name3"></span></li>
+                    <li><span id="show-player-name4"></span></li>
+                    <li><span id="show-player-name5"></span></li>
+                    <li><span id="show-player-name6"></span></li>
+                </ol>
+             
+              
+              
+            </div>
+            <div class="p-6 pt-0">
+             
+            </div>
+          </div>
+          <div class="relative flex w-96 flex-col rounded-xl bg-black text-white bg-clip-border text-gray-700 shadow-md p-8 ">
+            <div class="relative mx-4 -mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 p-8">
+              <img
+                src="photo/5.jpg"
+              />
+            </div>
+            <div class="p-6">
+              <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased " id="player-name4">
+                Tonni Croos
+              </h5>
+              <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                21 goals 15 assist
+              </p>
+            </div>
+            <div class="p-6 pt-0">
+              <button
+                class="select-none rounded-lg bg-pink-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button" id="btn-4"
+                data-ripple-light="true"
+              >
+                Select 
+              </button>
+            </div>
+          </div>
+          <div class="relative flex w-96 flex-col rounded-xl bg-black text-white bg-clip-border text-gray-700 shadow-md p-8 ">
+            <div class="relative mx-4 -mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 p-8">
+              <img
+                src="photo/6.jpg"
+              />
+            </div>
+            <div class="p-6">
+              <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased" id="player-name5">
+                Luais Swarage
+              </h5>
+              <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                34 goals 12 asisst
+              </p>
+            </div>
+            <div class="p-6 pt-0">
+              <button
+                class="select-none rounded-lg bg-pink-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button" id="btn-5"
+                data-ripple-light="true"
+              >
+                Select 
+              </button>
+            </div>
+          </div>
+          <div class="relative flex w-96 flex-col rounded-xl bg-black text-white bg-clip-border text-gray-700 shadow-md p-8 ">
+            <div class="relative mx-4 -mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 p-8">
+              <img
+                src="photo/7.webp"
+              />
+            </div>
+            <div class="p-6">
+              <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased" id="player-name6">
+                 Mohammad Salha
+              </h5>
+              <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                65 goals 100 assist
+              </p>
+            </div>
+            <div class="p-6 pt-0">
+              <button
+                class="select-none rounded-lg bg-pink-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button" id="btn-6"
+                data-ripple-light="true"
+              >
+                Select
+              </button>
+            </div>
+          </div>
+          <div class="relative flex w-96 flex-col rounded-xl bg-black text-white bg-clip-border text-gray-700 shadow-md p-8 ">
+            
+            <div class="p-6">
+              
+              
+            </div>
+            <div class="p-6 pt-0">
+             
+            </div>
+          </div>
+        </div>
+
+     </section>
+
+     <script src="main.js"></script>
+</body>
+</html>
